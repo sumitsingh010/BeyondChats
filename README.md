@@ -12,7 +12,7 @@ A full-stack web app for scraping and displaying articles from BeyondChats blog.
 
 ## Tech Stack
 
-**Backend:** Node.js, Express, Puppeteer  
+**Backend:** Node.js, Express 
 **Frontend:** React, CSS
 
 ## Setup
