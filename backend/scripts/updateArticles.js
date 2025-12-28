@@ -96,7 +96,7 @@ async function scrapeArticleContent(url) {
 async function updateArticleWithLLM(originalArticle, referenceArticles) {
   const apiKey = process.env.OPENAI_API_KEY;
   
-  if (!apiKey || apiKey === 'AIzaSyAuSxYWyXU1DR1dhPWqEM7ikEdww0HvP5s') {
+  if (!apiKey) {
     console.log('OpenAI API key not configured, skipping LLM update');
     return {
       content: originalArticle.content,
