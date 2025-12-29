@@ -12,7 +12,6 @@ Frontend: https://frontend-five-mu-34.vercel.app
 - Horizontal scrolling article cards
 - Search functionality
 - Full-screen reading mode
-
 - Article management (CRUD operations)
 - Additional pages: Product, Pricing, FAQ, Contact
 
