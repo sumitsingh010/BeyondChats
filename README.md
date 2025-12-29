@@ -4,7 +4,7 @@ Full-stack application for scraping and displaying articles from BeyondChats blo
 
 ## Live Demo
 
-Frontend: [Will be added after deployment]
+Frontend: https://frontend-five-mu-34.vercel.app
 
 ## Features
 
@@ -12,6 +12,7 @@ Frontend: [Will be added after deployment]
 - Horizontal scrolling article cards
 - Search functionality
 - Full-screen reading mode
+
 - Article management (CRUD operations)
 - Additional pages: Product, Pricing, FAQ, Contact
 
@@ -133,63 +134,101 @@ How it works:
 
 ```
 BeyondChats/
-├── backend/
-│   ├── server.js           # Express server
-│   ├── package.json
+├── backend/                 # Backend server
+│   ├── server.js           # Express server entry point
+│   ├── package.json        # Backend dependencies
 │   ├── data/
-│   │   └── articles.json   # Scraped articles
+│   │   └── articles.json   # Article data storage
 │   ├── models/
-│   │   └── db.js          # DB helpers
+│   │   └── db.js          # Database helper functions
 │   ├── routes/
-│   │   └── articles.js    # API routes
+│   │   └── articles.js    # Article API routes
 │   └── scripts/
-│       ├── scraper.js     # Web scraper
-│       └── updateArticles.js
+│       ├── scraper.js     # Web scraping script
+│       └── updateArticles.js  # Article update script
 │
-├── frontend/
-│   ├── package.json
+├── frontend/               # React frontend
+│   ├── package.json       # Frontend dependencies
 │   ├── public/
-│   │   └── index.html
+│   │   └── index.html     # HTML template
 │   └── src/
-│       ├── App.js         # Main component
-│       ├── App.css
-│       ├── index.js
-│       └── index.css
+│       ├── App.js         # Main React component
+│       ├── App.css        # App styles
+│       ├── index.js       # React entry point
+│       └── index.css      # Global styles
 │
-├── README.md
-└── LICENSE
+├── README.md              # Project documentation
+└── LICENSE               # License file
 ```
 
-## API Endpoints
+## 🔄 How It Works
+
+### Article Scraping Process
+1. **Puppeteer** launches a headless browser
+2. Navigates to BeyondChats blog
+3. **Cheerio** parses the HTML content
+4. Extracts article data (title, content, author, date, URL)
+5. Saves structured data to `articles.json`
+
+### Frontend-Backend Communication
+1. React app makes HTTP requests to Express API
+2. Express server reads/writes to JSON file
+3. Data is sent back to frontend as JSON
+4. React renders the articles in a responsive UI
+
+### Article Display
+- Articles are displayed in horizontal scrolling cards
+- Search filters articles in real-time
+- Click on an article for full-screen reading mode
+- View original article via provided link
+
+## 🌐 API Endpoints
 
 | Method | Endpoint | Description |
 |--------|----------|-------------|
 | GET | `/api/articles` | Get all articles |
-| GET | `/api/articles/:id` | Get article by ID |
-| POST | `/api/articles` | Create article |
+| GET | `/api/articles/:id` | Get specific article by ID |
+| POST | `/api/articles` | Create new article |
 | PUT | `/api/articles/:id` | Update article |
 | DELETE | `/api/articles/:id` | Delete article |
 
-## Deployment
+## 🚢 Deployment
 
-For deploying this project:
+### Frontend Deployment (Vercel/Netlify)
 
-**Frontend:** Vercel or Netlify work well with React
-- Build the frontend with `npm run build`
-- Deploy the build folder
+**For Vercel:**
+```bash
+cd frontend
+npm run build
+# Install Vercel CLI: npm i -g vercel
+vercel --prod
+```
 
-**Backend:** Render, Railway, or Heroku
-- Point to the backend folder
-- Set start command to `npm start`
+**For Netlify:**
+```bash
+cd frontend
+npm run build
+# Drag and drop the 'build' folder to Netlify dashboard
+```
 
-After deployment, update the API URL in your React app to point to the deployed backend.
+### Backend Deployment (Render/Railway/Heroku)
 
-## Contact
+Update the frontend API URL in your React app to point to your deployed backend URL.
 
-Sumit Singh Sengar  
-Email: sengarsumit7047@gmail.com  
-GitHub: [@sumitsingh010](https://github.com/sumitsingh010)
+## 🤝 Contributing
 
-## License
+Contributions are welcome! Please feel free to submit a Pull Request.
 
-ISC License - see LICENSE file for details.
+## 📧 Contact
+
+**Developer:** Sumit Singh Sengar  
+**Email:** sengarsumit7047@gmail.com  
+**GitHub:** [@sumitsingh010](https://github.com/sumitsingh010)
+
+## 📄 License
+
+This project is licensed under the ISC License - see the LICENSE file for details.
+
+---
+
+**Note:** Remember to add your deployed frontend URL in the "Live Demo" section after deployment.
