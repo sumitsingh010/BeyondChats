@@ -15,7 +15,44 @@ A full-stack web app for scraping and displaying articles from BeyondChats blog.
 **Backend:** Node.js, Express 
 **Frontend:** React, CSS
 
-## Setup
+## Deployment on Render
+
+This application is configured for easy deployment on Render using the `render.yaml` blueprint.
+
+### Option 1: Deploy via Render Dashboard (Recommended)
+
+1. Fork or push this repository to your GitHub account
+2. Go to [Render Dashboard](https://dashboard.render.com/)
+3. Click "New" → "Blueprint"
+4. Connect your GitHub repository
+5. Render will automatically detect the `render.yaml` file
+6. Click "Apply" to create the service
+7. Your app will be live at `https://your-app-name.onrender.com`
+
+### Option 2: Deploy as Web Service
+
+1. Go to [Render Dashboard](https://dashboard.render.com/)
+2. Click "New" → "Web Service"
+3. Connect your GitHub repository
+4. Configure:
+   - **Name**: beyondchats (or your preferred name)
+   - **Environment**: Node
+   - **Build Command**: `npm run build`
+   - **Start Command**: `npm start`
+   - **Environment Variables**:
+     - `NODE_ENV=production`
+5. Click "Create Web Service"
+
+### Environment Variables
+
+The application requires the following environment variables:
+- `NODE_ENV=production` (for production deployment)
+- `PORT` (automatically set by Render)
+
+Optional:
+- `OPENAI_API_KEY` (if using OpenAI features)
+
+## Local Development Setup
 
 ### Backend
 ```bash
@@ -47,9 +84,11 @@ node scripts/scraper.js
 │   ├── models/
 │   ├── scripts/
 │   └── data/
-└── frontend/
-    ├── src/
-    └── public/
+├── frontend/
+│   ├── src/
+│   └── public/
+├── package.json (root - for deployment)
+└── render.yaml (Render blueprint)
 ```
 
 ## Contact

@@ -1,0 +1,18 @@
+{
+  "name": "beyondchats",
+  "version": "1.0.0",
+  "description": "BeyondChats Article Viewer - Full Stack Application",
+  "scripts": {
+    "install-backend": "cd backend && npm install",
+    "install-frontend": "cd frontend && npm install",
+    "install-all": "npm run install-backend && npm run install-frontend",
+    "build": "cd frontend && npm install && npm run build",
+    "start": "cd backend && npm install && node server.js",
+    "dev-backend": "cd backend && npm run dev",
+    "dev-frontend": "cd frontend && npm start",
+    "scrape": "cd backend && npm run scrape"
+  },
+  "keywords": ["beyondchats", "articles", "scraper", "react", "express"],
+  "author": "Sumit Singh Sengar",
+  "license": "ISC"
+}
