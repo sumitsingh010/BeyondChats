@@ -187,7 +187,7 @@ function ProductSection({ onBack }) {
         <div className="product-grid">
           <div className="product-card">
             <h2>AI Chatbot Platform</h2>
-            <p>Build intelligent chatbots powered by advanced AI technology. Perfect for customer service, lead generation, and automated support.</p>
+            <p>Build chatbots for customer service and lead generation.</p>
             <ul>
               <li>Natural Language Processing</li>
               <li>Multi-channel support</li>
@@ -197,7 +197,7 @@ function ProductSection({ onBack }) {
           </div>
           <div className="product-card">
             <h2>Analytics Dashboard</h2>
-            <p>Track and analyze your chatbot performance with real-time insights and comprehensive reporting.</p>
+            <p>Track your chatbot performance.</p>
             <ul>
               <li>Real-time analytics</li>
               <li>User behavior tracking</li>
@@ -207,7 +207,7 @@ function ProductSection({ onBack }) {
           </div>
           <div className="product-card">
             <h2>Integration Suite</h2>
-            <p>Seamlessly connect your chatbot with popular platforms and tools.</p>
+            <p>Connect with popular tools.</p>
             <ul>
               <li>CRM integration</li>
               <li>API access</li>
@@ -232,8 +232,8 @@ function PricingSection({ onBack }) {
             <h2>Starter</h2>
             <div className="price">₹9<span>/month</span></div>
             <ul>
-              <li>Up to 500 conversations/month</li>
-              <li>Basic chatbot features</li>
+              <li>500 conversations/month</li>
+              <li>Basic features</li>
               <li>Email support</li>
               <li>1 chatbot</li>
               <li>Basic analytics</li>
@@ -245,11 +245,11 @@ function PricingSection({ onBack }) {
             <h2>Professional</h2>
             <div className="price">₹49<span>/month</span></div>
             <ul>
-              <li>Up to 5,000 conversations/month</li>
+              <li>5,000 conversations/month</li>
               <li>Advanced AI features</li>
               <li>Priority support</li>
-              <li>Up to 5 chatbots</li>
-              <li>Advanced analytics dashboard</li>
+              <li>5 chatbots</li>
+              <li>Advanced analytics</li>
               <li>Custom branding</li>
               <li>API access</li>
             </ul>
@@ -261,12 +261,12 @@ function PricingSection({ onBack }) {
             <ul>
               <li>Unlimited conversations</li>
               <li>Unlimited chatbots</li>
-              <li>Dedicated support manager</li>
+              <li>Dedicated support</li>
               <li>Custom integrations</li>
-              <li>Advanced security features</li>
+              <li>Advanced security</li>
               <li>SLA guarantee</li>
               <li>White-label solution</li>
-              <li>Training & onboarding</li>
+              <li>Training included</li>
             </ul>
             <button className="pricing-btn">Choose Enterprise</button>
           </div>
@@ -282,31 +282,31 @@ function ResourcesSection({ onBack }) {
   const faqs = [
     {
       question: "How long does it take to integrate your chatbot?",
-      answer: "Integration typically takes 5-15 minutes. Simply copy our script tag and paste it into your website's HTML. No coding experience required!"
+      answer: "Integration takes around 10 minutes. Copy our script and paste it into your website's HTML."
     },
     {
       question: "Do I need a credit card for the starter plan?",
-      answer: "No credit card is required for the ₹9/month starter plan. You can start immediately and upgrade anytime."
+      answer: "No credit card required for the ₹9/month plan. Start immediately and upgrade anytime."
     },
     {
       question: "Can you integrate with our CRM?",
-      answer: "Yes! We support integration with popular CRMs like Salesforce, HubSpot, Zoho, and custom integrations via API."
+      answer: "Yes. We support Salesforce, HubSpot, Zoho, and custom integrations via API."
     },
     {
       question: "How will I get the details of the leads?",
-      answer: "All lead information is captured in your dashboard and can be exported to CSV, sent to your CRM, or accessed via webhook notifications."
+      answer: "Lead info is in your dashboard. Export to CSV, send to CRM, or get webhook notifications."
     },
     {
       question: "What if I want to cancel my subscription?",
-      answer: "You can cancel anytime from your account settings. No questions asked, no cancellation fees. Your data remains accessible for 30 days."
+      answer: "Cancel anytime from account settings. No fees. Data accessible for 30 days."
     },
     {
       question: "Is my user data secure?",
-      answer: "Absolutely! We use bank-level encryption (SSL/TLS), comply with GDPR, and store data in secure servers. Your data is never shared with third parties."
+      answer: "Yes. We use SSL/TLS encryption, comply with GDPR, and never share data with third parties."
     },
     {
       question: "There are so many chatbots. How to choose?",
-      answer: "BeyondChats stands out with: 1) Easy setup in minutes 2) Affordable Indian pricing 3) Advanced AI that understands context 4) Local support in your timezone 5) No hidden costs."
+      answer: "BeyondChats has easy setup, affordable pricing, good AI, and local support."
     }
   ];
 
@@ -359,33 +359,33 @@ function ResourcesSection({ onBack }) {
 
         <div className="resources-grid" style={{marginTop: '4rem'}}>
           <div className="resource-card">
-            <h2>📚 Documentation</h2>
-            <p>Comprehensive guides and API documentation to help you get started quickly.</p>
+            <h2>Documentation</h2>
+            <p>API docs and integration guides.</p>
             <a href="#docs" className="resource-link">Read Docs →</a>
           </div>
           <div className="resource-card">
-            <h2>🎓 Tutorials</h2>
-            <p>Step-by-step tutorials to master chatbot development and best practices.</p>
+            <h2>Tutorials</h2>
+            <p>Step-by-step guides to get started.</p>
             <a href="#tutorials" className="resource-link">View Tutorials →</a>
           </div>
           <div className="resource-card">
-            <h2>💡 Blog</h2>
-            <p>Latest insights, tips, and industry trends in chatbot technology.</p>
+            <h2>Blog</h2>
+            <p>Latest updates and tips.</p>
             <a href="#blog" className="resource-link">Read Blog →</a>
           </div>
           <div className="resource-card">
-            <h2>🎥 Video Guides</h2>
-            <p>Watch video tutorials and walkthroughs for visual learning.</p>
+            <h2>Video Guides</h2>
+            <p>Video tutorials and walkthroughs.</p>
             <a href="#videos" className="resource-link">Watch Videos →</a>
           </div>
           <div className="resource-card">
-            <h2>👥 Community</h2>
-            <p>Join our community forum to connect with other developers.</p>
+            <h2>Community</h2>
+            <p>Connect with other developers.</p>
             <a href="#community" className="resource-link">Join Community →</a>
           </div>
           <div className="resource-card">
-            <h2>📊 Case Studies</h2>
-            <p>Real-world success stories from companies using BeyondChats.</p>
+            <h2>Case Studies</h2>
+            <p>Success stories from our users.</p>
             <a href="#cases" className="resource-link">View Cases →</a>
           </div>
         </div>
@@ -403,19 +403,19 @@ function ContactSection({ onBack }) {
         <div className="contact-content">
           <div className="contact-info">
             <h2>Get in Touch</h2>
-            <p>Have questions? We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
+            <p>We'd love to hear from you.</p>
             
             <div className="contact-details">
               <div className="contact-item">
-                <strong>📧 Email</strong>
+                <strong>Email</strong>
                 <a href="mailto:sengarsumit7047@gmail.com">sengarsumit7047@gmail.com</a>
               </div>
               <div className="contact-item">
-                <strong>💬 Support</strong>
-                <p>24/7 Support available for all users</p>
+                <strong>Support</strong>
+                <p>Available for all users</p>
               </div>
               <div className="contact-item">
-                <strong>🏢 Office Hours</strong>
+                <strong>Office Hours</strong>
                 <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
               </div>
             </div>
